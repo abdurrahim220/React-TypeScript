@@ -6,6 +6,7 @@ import UserDemo from "./components/UserDemo";
 import DataFetch from "./components/DataFetch";
 import Button from "./components/Button";
 import Post from "./components/Post";
+import ButtonStyle from "./components/ButtonStyle";
 
 const user1 = {
   name: "md rifat uddin",
@@ -33,7 +34,10 @@ const user3 =[
     email:'z.abdurrahman5@gmail.com',
     age:25,
   },
-]
+];
+
+const ButtonStyles = {color:'red',margin:'2px solid red',padding:'0.5rem'}
+
 
 function App() {
   return (
@@ -41,9 +45,11 @@ function App() {
       <h1>User Management</h1>
       <h1>Children Props</h1>
 
-      <Button>Click Me</Button>
+      <ButtonStyle btnStyle={ButtonStyles}/>
 
-      <Post/>
+      {/* <Button>Click Me</Button> */}
+
+      {/* <Post/> */}
 
       {/* <DataFetch status="success"/> */}
       {/* <User

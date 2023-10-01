@@ -1,7 +1,6 @@
-
 import React from "react";
 
-type DataFetchProps = {status:"loading" | "success" | "error"}
+type DataFetchProps = { status: "loading" | "success" | "error" };
 
 const DataFetch = ({ status }: DataFetchProps) => {
   if (status === "loading") {
