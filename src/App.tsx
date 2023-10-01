@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import User from "./components/User";
 import UserDemo from "./components/UserDemo";
+import DataFetch from "./components/DataFetch";
 
 const user1 = {
   name: "md rifat uddin",
@@ -36,6 +37,8 @@ function App() {
   return (
     <div className="App">
       <h1>User Management</h1>
+
+      <DataFetch status="success"/>
       {/* <User
         name="md ab rahim"
         age={24}
@@ -52,6 +55,7 @@ function App() {
       <User user={user2} />
 
       <UserDemo users = {user3}/>
+      
     </div>
   );
 }
