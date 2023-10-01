@@ -4,6 +4,8 @@ import "./App.css";
 import User from "./components/User";
 import UserDemo from "./components/UserDemo";
 import DataFetch from "./components/DataFetch";
+import Button from "./components/Button";
+import Post from "./components/Post";
 
 const user1 = {
   name: "md rifat uddin",
@@ -37,8 +39,13 @@ function App() {
   return (
     <div className="App">
       <h1>User Management</h1>
+      <h1>Children Props</h1>
 
-      <DataFetch status="success"/>
+      <Button>Click Me</Button>
+
+      <Post/>
+
+      {/* <DataFetch status="success"/> */}
       {/* <User
         name="md ab rahim"
         age={24}
@@ -51,10 +58,10 @@ function App() {
         isRegistered={false}
         lang={["bangla", "english"]}
       /> */}
-      <User user={user1} />
-      <User user={user2} />
+      {/* <User user={user1} /> */}
+      {/* <User user={user2} /> */}
 
-      <UserDemo users = {user3}/>
+      {/* <UserDemo users = {user3}/> */}
       
     </div>
   );
